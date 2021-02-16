@@ -22,6 +22,7 @@ class CommunicationTabViewController: UIViewController {
         super.viewDidLoad()
         initController()
         initMessageReadTableView()
+        hideKeyboardWhenTappedAround()
     }
     
     private func initController() {
@@ -72,4 +73,16 @@ extension CommunicationTabViewController: UITableViewDelegate, UITableViewDataSo
     }
     
     
+}
+
+extension CommunicationTabViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(CommunicationTabViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

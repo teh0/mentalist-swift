@@ -98,5 +98,6 @@ extension MapTabViewController: UICollectionViewDelegate, UICollectionViewDataSo
         return historicCell
     }
     
-    
 }
+
+
