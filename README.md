@@ -69,5 +69,5 @@ Utilisation du design pattern [state](https://refactoring.guru/design-patterns/s
     
         self.activeNextStep(step: StepTwo())
     }
-}
+  }
   ```
