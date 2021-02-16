@@ -52,7 +52,7 @@ Utilisation du design pattern [state](https://refactoring.guru/design-patterns/s
   On déporte la logique de la résolution de l'exercice à l'instance de la step en cours. Pour passer d'une step à l'autre
   on a juste à injecter l'instance de la prochaine step directement dans les classes Steps : 
   
-  Exemple avec la classe `Step1.swift` : 
+  Exemple avec la classe `StepOne.swift` : 
 
   ```swift
   class StepOne: BaseStep {
